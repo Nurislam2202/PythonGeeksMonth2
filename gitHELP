@@ -2,11 +2,23 @@
 git config --global user.name "username of github account"
 git config --global user.email "user email of github account"
 
+
 """ once in project """
 git init - инициализирует проект (.git)
 git remote add origin (url for your repository) - привязывает репозиторий и ваш проект
+
+
+"""add a file .gitignore"""
+
 
 """ every time when pushing """
 git add filename\. - добавляет ваши файлы в репозиторий
 git commit -m "(commit name)" - чекпоинт, сохроняет файлы
 git push origin master\main - отправляет файлы в ваш репозиторий
+
+
+"""userful commands"""
+git status (-s) - показывает этапы файлов
+git rm --cached namefile - удаление файлов с репозитория
+    ("--cached" delete the file only in github, but it stay in project)
+git remote -v - показывает имя + адрес репозитория и то, для чего используется адрес
