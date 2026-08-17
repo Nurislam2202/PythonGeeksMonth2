@@ -22,3 +22,5 @@ git status (-s) - показывает этапы файлов
 git rm --cached namefile - удаление файлов с репозитория
     ("--cached" delete the file only in github, but it stay in project)
 git remote -v - показывает имя + адрес репозитория и то, для чего используется адрес
+git clone (url) - скачивает проект из гит репозитория
+git remote remove origin - отвязывает проект от гит репозитория
