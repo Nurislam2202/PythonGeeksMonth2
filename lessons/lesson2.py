@@ -40,7 +40,7 @@ class Manga(Books):
         return f'{super().__str__()}\n{self.image}\nцена:{self.prise}'
 
 manga=Manga('берсерк','миура')
-# manga.author='Кентаро'
+manga.author='Кентаро'
 print(manga)
 manga.reverse()
 # DRY
@@ -55,6 +55,11 @@ class Anime(Manga):
 
     def __len__(self):
         return self.prise
+
+    def __str__(self):
+        return f"\nprint(anime)\n{Books.__str__(self)}drive image = {self.drive_image}"
+
+
 anime=Anime('Naruto','KIsimoto','24')
 print(anime.title,anime.author,anime.drive_image)
 anime.prise_book()
