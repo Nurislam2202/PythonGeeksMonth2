@@ -8,7 +8,7 @@ git init - инициализирует проект (.git)
 git remote add origin (url for your repository) - привязывает репозиторий и ваш проект
 
 
-"""add a file .gitignore"""
+""" add a file .gitignore """
 
 
 """ every time when pushing """
@@ -17,10 +17,17 @@ git commit -m "(commit name)" - чекпоинт, сохроняет файлы
 git push origin master\main - отправляет файлы в ваш репозиторий
 
 
-"""userful commands"""
+""" userful commands """
 git status (-s) - показывает этапы файлов
 git rm --cached namefile - удаление файлов с репозитория
     ("--cached" delete the file only in github, but it stay in project)
 git remote -v - показывает имя + адрес репозитория и то, для чего используется адрес
+
 git clone (url) - скачивает проект из гит репозитория
 git remote remove origin - отвязывает проект от гит репозитория
+
+git branch - провекра веток
+git branch (name) - создание веток
+git checkout (name) - переход на другую ветку
+git merge - сливает обновления из ветки которую вы указали в ветку,
+            в которой вы находитесь
