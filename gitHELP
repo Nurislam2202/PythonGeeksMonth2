@@ -31,6 +31,7 @@ git branch (name) - создание веток
 git checkout (name) - переход на другую ветку
 git merge - сливает обновления из ветки которую вы указали в ветку,
             в которой вы находитесь
+ctrl + R - поиск в файле (полезно для gitignore)
 
 
 """ commands for venv """
@@ -39,3 +40,5 @@ deactivate - деактивация
 python/python3/py/py3 -m venv (venv name) - скачивание нового вируального окружения
 pip install (modulename)==(specific version) - скачивание модулей
 pip freeze - показать какие модули есть
+pip freeze > requirements.txt - создание текстового файла с имеющимися модулями
+pip install -r requirements.txt - скачивание всех модулей из файла
