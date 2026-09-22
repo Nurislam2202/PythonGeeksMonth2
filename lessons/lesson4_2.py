@@ -47,7 +47,7 @@ class Anime(Manga):
 
 
 class Remanga:
-    def __init(self, manga):
+    def __init__(self, manga):
         self.manga = manga
 
     def manga_upp(self):
@@ -59,4 +59,8 @@ class Newmanga(Manga, Remanga):
     pass
 # MRO - порядок выполнения методов
 mymanga = Newmanga("ванпис", "ода", "image+320")
-print(Newmanga.mro())
+if __name__ == "__main__":
+    print(Newmanga.mro())
+""" (backdoor) ограничитель - все, что ниже запускается только в этом файле, без него при импорте даже маленького
+    будет запускаться код. При импорте маленького куска python запускает код тут, потом
+    только в файле импорта """

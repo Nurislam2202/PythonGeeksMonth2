@@ -1,4 +1,6 @@
 import time
+from lessons.lesson4_2 import Remanga
+
 
 def mtime(func):
     def wrapper(*args, **kwargs):
