@@ -54,7 +54,7 @@ class Remanga:
         print(self.manga, "улучшена рисовка")
 
 
-# class Newmanga(Books,Manga, Remanga):
+# class Newmanga(Books, Manga, Remanga):    # Будет ошибка
 class Newmanga(Manga, Remanga):
     pass
 # MRO - порядок выполнения методов
