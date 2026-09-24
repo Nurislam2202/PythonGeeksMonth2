@@ -1,4 +1,5 @@
 # СУБД, SQL, CRUD - create, read, update, delete
+
 import sqlite3 as sql
 
 with sql.connect('base.db') as connection:
